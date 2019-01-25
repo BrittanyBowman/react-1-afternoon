@@ -27,8 +27,8 @@ export default class Sum extends Component {
         return (
             <div className="puzzleBox sumPB">
                 <h4> Sum </h4>
-                <input className="inputLine" type="number" onChange={(e) => this.updateNumber1(e.target.value)}></input>
-                <input className="inputLine" type="number" onChange={(e) => this.updateNumber2(e.target.value)}></input>
+                <input className="inputLine" type="number" onChange={(e) => this.updateNumber1(e.target.value)}/>
+                <input className="inputLine" type="number" onChange={(e) => this.updateNumber2(e.target.value)}/>
                 <button className="confirmationButton" onClick={() => this.add(this.state.number1, this.state.number2) }> Add </button>
                 <span className="resultsBox"> Sum: {this.state.sum} </span>
             </div>
